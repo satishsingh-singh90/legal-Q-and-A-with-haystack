@@ -1,0 +1,8 @@
+numpy==1.26.3
+scikit-learn==1.3.2
+streamlit==1.29.0
+streamlit-option-menu==0.3.6
+elasticsearch==7.17.9
+farm-haystack[colab,preprocessing,elasticsearch,inference]
+farm-haystack[colab,ocr,preprocessing,file-conversion,pdf]
+pyngrok==7.1.6 
