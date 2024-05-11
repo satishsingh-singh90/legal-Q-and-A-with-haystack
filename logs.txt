@@ -1,0 +1,158 @@
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.28.0.12:8501
+  External URL: http://35.243.147.68:8501
+
+2024-05-11 16:45:31.945816: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-05-11 16:45:31.945942: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-05-11 16:45:32.080023: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-05-11 16:45:33.530530: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+WARNING - elasticsearch -  GET http://localhost:9200/ [status:N/A request:0.001s]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/streamlit/runtime/caching/cache_utils.py", line 264, in _get_or_create_cached_value
+    cached_result = cache.read_result(value_key)
+  File "/usr/local/lib/python3.10/dist-packages/streamlit/runtime/caching/cache_resource_api.py", line 500, in read_result
+    raise CacheKeyNotFoundError()
+streamlit.runtime.caching.cache_errors.CacheKeyNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/streamlit/runtime/caching/cache_utils.py", line 312, in _handle_cache_miss
+    cached_result = cache.read_result(value_key)
+  File "/usr/local/lib/python3.10/dist-packages/streamlit/runtime/caching/cache_resource_api.py", line 500, in read_result
+    raise CacheKeyNotFoundError()
+streamlit.runtime.caching.cache_errors.CacheKeyNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/elasticsearch/connection/http_urllib3.py", line 255, in perform_request
+    response = self.pool.urlopen(
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 799, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 416, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.10/http/client.py", line 1283, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1329, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7c6a16af6710>: Failed to establish a new connection: [Errno 111] Connection refused
+2024-05-11 16:46:04.891 Uncaught app exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/streamlit/runtime/caching/cache_utils.py", line 264, in _get_or_create_cached_value
+    cached_result = cache.read_result(value_key)
+  File "/usr/local/lib/python3.10/dist-packages/streamlit/runtime/caching/cache_resource_api.py", line 500, in read_result
+    raise CacheKeyNotFoundError()
+streamlit.runtime.caching.cache_errors.CacheKeyNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/streamlit/runtime/caching/cache_utils.py", line 312, in _handle_cache_miss
+    cached_result = cache.read_result(value_key)
+  File "/usr/local/lib/python3.10/dist-packages/streamlit/runtime/caching/cache_resource_api.py", line 500, in read_result
+    raise CacheKeyNotFoundError()
+streamlit.runtime.caching.cache_errors.CacheKeyNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/haystack/document_stores/elasticsearch/es7.py", line 270, in _init_elastic_client
+    raise ConnectionError(
+ConnectionError: Initial connection to Elasticsearch failed. Make sure you run an Elasticsearch instance at `[{'host': 'localhost', 'port': 9200}]` and that it has finished the initial ramp up (can take > 30s).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/streamlit/runtime/scriptrunner/script_runner.py", line 534, in _run_script
+    exec(code, module.__dict__)
+  File "/content/app.py", line 96, in <module>
+    main()
+  File "/content/app.py", line 46, in main
+    document_store = preprocess_and_store_documents(temp_file_path)
+  File "/usr/local/lib/python3.10/dist-packages/streamlit/runtime/caching/cache_utils.py", line 212, in wrapper
+    return cached_func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/streamlit/runtime/caching/cache_utils.py", line 241, in __call__
+    return self._get_or_create_cached_value(args, kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/streamlit/runtime/caching/cache_utils.py", line 267, in _get_or_create_cached_value
+    return self._handle_cache_miss(cache, value_key, func_args, func_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/streamlit/runtime/caching/cache_utils.py", line 321, in _handle_cache_miss
+    computed_value = self._info.func(*func_args, **func_kwargs)
+  File "/content/haystack_utility.py", line 55, in preprocess_and_store_documents
+    document_store = ElasticsearchDocumentStore(host=host, username="", password="", index="document")
+  File "/usr/local/lib/python3.10/dist-packages/haystack/nodes/base.py", line 46, in wrapper_exportable_to_yaml
+    init_func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/haystack/document_stores/elasticsearch/es7.py", line 141, in __init__
+    client = ElasticsearchDocumentStore._init_elastic_client(
+  File "/usr/local/lib/python3.10/dist-packages/haystack/document_stores/elasticsearch/es7.py", line 275, in _init_elastic_client
+    raise ConnectionError(
+ConnectionError: Initial connection to Elasticsearch failed. Make sure you run an Elasticsearch instance at `[{'host': 'localhost', 'port': 9200}]` and that it has finished the initial ramp up (can take > 30s).
+WARNING - haystack.document_stores.search_engine -  DEPRECATION WARNINGS:
+                1. delete_all_documents() method is deprecated, please use delete_documents method
+                For more details, please refer to the issue: https://github.com/deepset-ai/haystack/issues/1045
+                
+INFO - haystack.modeling.utils -  Using devices: CPU - Number of GPUs: 0
+tokenizer_config.json:   0%|          | 0.00/1.25k [00:00<?, ?B/s]tokenizer_config.json: 100%|██████████| 1.25k/1.25k [00:00<00:00, 3.43MB/s]
+vocab.txt:   0%|          | 0.00/232k [00:00<?, ?B/s]vocab.txt: 100%|██████████| 232k/232k [00:00<00:00, 4.85MB/s]
+special_tokens_map.json:   0%|          | 0.00/125 [00:00<?, ?B/s]special_tokens_map.json: 100%|██████████| 125/125 [00:00<00:00, 469kB/s]
+config.json:   0%|          | 0.00/659 [00:00<?, ?B/s]config.json: 100%|██████████| 659/659 [00:00<00:00, 2.35MB/s]
+model.safetensors:   0%|          | 0.00/436M [00:00<?, ?B/s]model.safetensors:   2%|▏         | 10.5M/436M [00:00<00:07, 58.0MB/s]model.safetensors:   5%|▍         | 21.0M/436M [00:00<00:07, 52.5MB/s]model.safetensors:   7%|▋         | 31.5M/436M [00:00<00:07, 55.0MB/s]model.safetensors:  10%|▉         | 41.9M/436M [00:00<00:07, 55.0MB/s]model.safetensors:  12%|█▏        | 52.4M/436M [00:00<00:06, 55.0MB/s]model.safetensors:  14%|█▍        | 62.9M/436M [00:01<00:09, 40.6MB/s]model.safetensors:  17%|█▋        | 73.4M/436M [00:01<00:07, 47.3MB/s]model.safetensors:  19%|█▉        | 83.9M/436M [00:01<00:07, 48.7MB/s]model.safetensors:  24%|██▍       | 105M/436M [00:02<00:05, 56.0MB/s] model.safetensors:  26%|██▋       | 115M/436M [00:02<00:05, 56.7MB/s]model.safetensors:  31%|███▏      | 136M/436M [00:02<00:04, 62.3MB/s]model.safetensors:  34%|███▎      | 147M/436M [00:02<00:04, 62.7MB/s]model.safetensors:  36%|███▌      | 157M/436M [00:02<00:04, 65.3MB/s]model.safetensors:  39%|███▊      | 168M/436M [00:02<00:04, 61.7MB/s]model.safetensors:  41%|████      | 178M/436M [00:03<00:04, 63.9MB/s]model.safetensors:  46%|████▌     | 199M/436M [00:03<00:03, 71.6MB/s]model.safetensors:  48%|████▊     | 210M/436M [00:03<00:03, 59.1MB/s]model.safetensors:  53%|█████▎    | 231M/436M [00:03<00:03, 62.2MB/s]model.safetensors:  55%|█████▌    | 241M/436M [00:04<00:03, 54.2MB/s]model.safetensors:  60%|██████    | 262M/436M [00:07<00:11, 15.5MB/s]model.safetensors:  65%|██████▍   | 283M/436M [00:07<00:06, 22.7MB/s]model.safetensors:  70%|██████▉   | 304M/436M [00:07<00:04, 31.8MB/s]model.safetensors:  75%|███████▍  | 325M/436M [00:07<00:02, 42.7MB/s]model.safetensors:  79%|███████▉  | 346M/436M [00:07<00:01, 52.6MB/s]model.safetensors:  84%|████████▍ | 367M/436M [00:07<00:01, 65.4MB/s]model.safetensors:  89%|████████▉ | 388M/436M [00:08<00:00, 76.8MB/s]model.safetensors:  94%|█████████▍| 409M/436M [00:08<00:00, 74.8MB/s]model.safetensors:  99%|█████████▊| 430M/436M [00:08<00:00, 67.9MB/s]model.safetensors: 100%|██████████| 436M/436M [00:09<00:00, 47.7MB/s]
+INFO - haystack.modeling.model.language_model -  Auto-detected model language: english
+INFO - haystack.modeling.model.language_model -  Auto-detected model language: english
+INFO - haystack.modeling.utils -  Using devices: CPU - Number of GPUs: 0
+INFO - haystack.modeling.utils -  Using devices: CPU - Number of GPUs: 0
+config.json:   0%|          | 0.00/875 [00:00<?, ?B/s]config.json: 100%|██████████| 875/875 [00:00<00:00, 3.26MB/s]
+INFO - haystack.modeling.model.language_model -   * LOADING MODEL: 'satishsingh90/deepak_deberta_v3_base' (DebertaV2)
+model.safetensors:   0%|          | 0.00/735M [00:00<?, ?B/s]model.safetensors:   1%|▏         | 10.5M/735M [00:00<00:08, 81.2MB/s]model.safetensors:   3%|▎         | 21.0M/735M [00:00<00:09, 75.2MB/s]model.safetensors:   6%|▌         | 41.9M/735M [00:00<00:09, 75.7MB/s]model.safetensors:   7%|▋         | 52.4M/735M [00:00<00:11, 58.4MB/s]model.safetensors:  10%|▉         | 73.4M/735M [00:00<00:08, 78.0MB/s]model.safetensors:  11%|█▏        | 83.9M/735M [00:01<00:10, 62.8MB/s]model.safetensors:  14%|█▍        | 105M/735M [00:01<00:10, 61.3MB/s] model.safetensors:  16%|█▌        | 115M/735M [00:01<00:11, 52.9MB/s]model.safetensors:  19%|█▊        | 136M/735M [00:02<00:12, 49.3MB/s]model.safetensors:  20%|█▉        | 147M/735M [00:02<00:11, 49.4MB/s]model.safetensors:  23%|██▎       | 168M/735M [00:02<00:10, 56.3MB/s]model.safetensors:  24%|██▍       | 178M/735M [00:03<00:09, 57.0MB/s]model.safetensors:  27%|██▋       | 199M/735M [00:03<00:08, 61.5MB/s]model.safetensors:  29%|██▊       | 210M/735M [00:03<00:09, 56.8MB/s]model.safetensors:  31%|███▏      | 231M/735M [00:03<00:08, 62.6MB/s]model.safetensors:  33%|███▎      | 241M/735M [00:04<00:09, 54.2MB/s]model.safetensors:  36%|███▌      | 262M/735M [00:04<00:08, 53.9MB/s]model.safetensors:  37%|███▋      | 273M/735M [00:04<00:09, 50.1MB/s]model.safetensors:  40%|███▉      | 294M/735M [00:05<00:08, 54.4MB/s]model.safetensors:  41%|████▏     | 304M/735M [00:05<00:09, 46.6MB/s]model.safetensors:  43%|████▎     | 315M/735M [00:05<00:08, 50.0MB/s]model.safetensors:  44%|████▍     | 325M/735M [00:05<00:07, 53.4MB/s]model.safetensors:  47%|████▋     | 346M/735M [00:06<00:06, 57.3MB/s]model.safetensors:  48%|████▊     | 357M/735M [00:06<00:08, 44.6MB/s]model.safetensors:  50%|████▉     | 367M/735M [00:06<00:07, 48.4MB/s]model.safetensors:  53%|█████▎    | 388M/735M [00:07<00:07, 47.3MB/s]model.safetensors:  56%|█████▌    | 409M/735M [00:07<00:05, 55.6MB/s]model.safetensors:  57%|█████▋    | 419M/735M [00:07<00:06, 50.0MB/s]model.safetensors:  60%|█████▉    | 440M/735M [00:08<00:06, 48.7MB/s]model.safetensors:  61%|██████▏   | 451M/735M [00:08<00:05, 54.1MB/s]model.safetensors:  64%|██████▍   | 472M/735M [00:08<00:04, 64.7MB/s]model.safetensors:  66%|██████▌   | 482M/735M [00:09<00:05, 42.7MB/s]model.safetensors:  68%|██████▊   | 503M/735M [00:09<00:04, 49.8MB/s]model.safetensors:  70%|██████▉   | 514M/735M [00:09<00:04, 51.0MB/s]model.safetensors:  73%|███████▎  | 535M/735M [00:09<00:03, 60.0MB/s]model.safetensors:  74%|███████▍  | 545M/735M [00:09<00:03, 60.0MB/s]model.safetensors:  77%|███████▋  | 566M/735M [00:10<00:02, 62.9MB/s]model.safetensors:  78%|███████▊  | 577M/735M [00:10<00:03, 48.5MB/s]model.safetensors:  81%|████████▏ | 598M/735M [00:11<00:02, 50.1MB/s]model.safetensors:  83%|████████▎ | 608M/735M [00:11<00:02, 47.6MB/s]model.safetensors:  86%|████████▌ | 629M/735M [00:11<00:01, 53.5MB/s]model.safetensors:  87%|████████▋ | 640M/735M [00:11<00:01, 58.8MB/s]model.safetensors:  88%|████████▊ | 650M/735M [00:11<00:01, 57.0MB/s]model.safetensors:  90%|████████▉ | 661M/735M [00:12<00:01, 59.9MB/s]model.safetensors:  93%|█████████▎| 682M/735M [00:12<00:00, 64.2MB/s]model.safetensors:  94%|█████████▍| 692M/735M [00:12<00:00, 65.5MB/s]model.safetensors:  97%|█████████▋| 713M/735M [00:12<00:00, 64.2MB/s]model.safetensors:  98%|█████████▊| 724M/735M [00:13<00:00, 60.6MB/s]model.safetensors: 100%|█████████▉| 734M/735M [00:13<00:00, 63.4MB/s]model.safetensors: 100%|██████████| 735M/735M [00:13<00:00, 55.4MB/s]
+INFO - haystack.modeling.model.language_model -  Auto-detected model language: english
+INFO - haystack.modeling.model.language_model -  Loaded 'satishsingh90/deepak_deberta_v3_base' (DebertaV2 model) from model hub.
+tokenizer_config.json:   0%|          | 0.00/1.28k [00:00<?, ?B/s]tokenizer_config.json: 100%|██████████| 1.28k/1.28k [00:00<00:00, 4.86MB/s]
+spm.model:   0%|          | 0.00/2.46M [00:00<?, ?B/s]spm.model: 100%|██████████| 2.46M/2.46M [00:00<00:00, 151MB/s]
+added_tokens.json:   0%|          | 0.00/23.0 [00:00<?, ?B/s]added_tokens.json: 100%|██████████| 23.0/23.0 [00:00<00:00, 87.8kB/s]
+special_tokens_map.json:   0%|          | 0.00/286 [00:00<?, ?B/s]special_tokens_map.json: 100%|██████████| 286/286 [00:00<00:00, 921kB/s]
+/usr/local/lib/python3.10/dist-packages/transformers/convert_slow_tokenizer.py:550: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+INFO - haystack.modeling.utils -  Using devices: CPU - Number of GPUs: 0
+INFO - haystack.document_stores.search_engine -  Updating embeddings for all 1 docs ...
+Updating embeddings:   0%|          | 0/1 [00:00<?, ? Docs/s]Updating embeddings: 10000 Docs [00:01, 6444.41 Docs/s]      Updating embeddings: 10000 Docs [00:01, 6442.01 Docs/s]
+Inferencing Samples:   0%|          | 0/1 [00:00<?, ? Batches/s]Inferencing Samples: 100%|██████████| 1/1 [00:34<00:00, 34.66s/ Batches]Inferencing Samples: 100%|██████████| 1/1 [00:34<00:00, 34.69s/ Batches]
+Inferencing Samples:   0%|          | 0/1 [00:00<?, ? Batches/s]Inferencing Samples: 100%|██████████| 1/1 [00:29<00:00, 29.98s/ Batches]Inferencing Samples: 100%|██████████| 1/1 [00:29<00:00, 29.98s/ Batches]
+Inferencing Samples:   0%|          | 0/1 [00:00<?, ? Batches/s]Inferencing Samples: 100%|██████████| 1/1 [00:30<00:00, 30.09s/ Batches]Inferencing Samples: 100%|██████████| 1/1 [00:30<00:00, 30.09s/ Batches]
+Inferencing Samples:   0%|          | 0/1 [00:00<?, ? Batches/s]Inferencing Samples: 100%|██████████| 1/1 [00:30<00:00, 30.52s/ Batches]Inferencing Samples: 100%|██████████| 1/1 [00:30<00:00, 30.52s/ Batches]
+Inferencing Samples:   0%|          | 0/1 [00:00<?, ? Batches/s]Inferencing Samples: 100%|██████████| 1/1 [00:29<00:00, 29.94s/ Batches]Inferencing Samples: 100%|██████████| 1/1 [00:29<00:00, 29.94s/ Batches]
